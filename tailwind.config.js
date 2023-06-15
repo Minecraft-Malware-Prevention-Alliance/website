@@ -7,7 +7,8 @@ export default {
         primary: "#181a1b",
         // secondary: "#b38693",
         // tertiary: "#ffd1c0",
-        // highlight: "#ffc0f9"
+        // highlight: "#ffc0f9",
+        blurple: "#5865F2",
       }
     }
   },
