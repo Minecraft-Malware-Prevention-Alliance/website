@@ -9,7 +9,7 @@
 	<!-- Header START -->
 	<!-- <div class="fixed top-0 left-0 select-none">
 		<div class="flex flex-row m-3 rounded-full">
-			<img src="/fmt-logo-chroma+glow.png" class="rounded-full" alt="MMPA Logo" height="40" width="40" />
+			<img src="/fmt-logo-chroma+glow.svg" class="rounded-full" alt="MMPA Logo" height="40" width="40" />
 			<span class="m-2 font-medium text-1xl">MMPA</span>
 		</div>
 	</div> -->
