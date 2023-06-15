@@ -7,12 +7,12 @@
 
 <main class="flex flex-row text-white bg-primary">
 	<!-- Header START -->
-	<div class="fixed top-0 left-0 select-none">
+	<!-- <div class="fixed top-0 left-0 select-none">
 		<div class="flex flex-row m-3 rounded-full">
 			<img src="/fmt-logo-chroma+glow.png" class="rounded-full" alt="MMPA Logo" height="40" width="40" />
 			<span class="m-2 font-medium text-1xl">MMPA</span>
 		</div>
-	</div>
+	</div> -->
 	<!-- Header END -->
 
 	<!-- Middle START -->
@@ -23,7 +23,7 @@
 			</div>
 			<h1 class="text-3xl text-center">Minecraft Malware Prevention Alliance</h1>
 			<p class="text-center text-1xl">
-				The Minecraft Malware Prevention Alliance or MMPA for short is a group of people who are
+				The Minecraft Malware Prevention Alliance, or MMPA for short, is a group of people who are
 				<br />
 				dedicated to preventing malware from spreading in the Minecraft community.
 			</p>
@@ -47,7 +47,7 @@
 	<!-- Middle END -->
 
 	<!-- Footer START -->
-	<div class="fixed bottom-0 items-center justify-center mb-3 select-none">
+	<div class="fixed bottom-0 items-center justify-center mb-3">
 		<!-- <span class="text-xs">This Site is fully Open Source</span> -->
 		<span class="text-xs">© 2023 Minecraft Malware Prevention Alliance</span>
 	</div>
