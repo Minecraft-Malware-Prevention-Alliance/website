@@ -1,27 +1,24 @@
-name: Build SvelteKit
+name: Build
 
 on:
   push:
-    branches:
-      - master
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+      - name: Install dependencies
+        run: pnpm install
 
-      - name: Install dependencies & build
-        run: |
-          npm ci
-          npm run build
+      - name: Build
+        run: pnpm run build
