@@ -18,8 +18,16 @@
 	<!-- Header END -->
 
 		<!-- Middle START -->
-		<div class="">
-			
+		<div class="bg-white rounded-xl">
+			<h1 class="flex justify-center my-5 text-2xl text-center text-black">Report Malware</h1>
+
+			<form class="flex flex-col">
+				<label for="file" class="flex justify-center w-64 p-2 m-2 text-center text-white rounded-lg bg-primary hover:bg-primary/95">
+					<span>Upload File</span>
+					<input type="file" name="file" id="file" class="hidden" />
+				</label>
+				<input type="submit" value="Submit" class="w-64 p-2 m-2 text-white rounded-lg bg-primary hover:bg-primary/95" />
+			</form>
 		</div>
 		<!-- Middle END -->
 
