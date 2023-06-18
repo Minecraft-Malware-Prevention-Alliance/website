@@ -5,7 +5,7 @@
 	<title>MMPA</title>
 </svelte:head>
 
-<main class="flex flex-row text-white">
+<main class="flex flex-row text-white bg-primary">
 	<div class="fixed inset-0 flex flex-col items-center justify-center w-screen h-screen">
 
 	<!-- Middle START -->
