@@ -8,7 +8,7 @@
 <main class="flex flex-row text-white">
 	<div class="fixed inset-0 flex flex-col items-center justify-center w-screen h-screen">
 
-	<!-- Middle START -->
+		<!-- Middle START -->
 		<div class="flex flex-col items-center justify-center px-4 mb-10 gap-y-5 rounded-2xl">
 			<img
 				src="/fmt-logo-chroma+glow.svg"
@@ -62,5 +62,6 @@
 			<span class="text-xs">© 2023 Minecraft Malware Prevention Alliance</span>
 		</div>
 		<!-- Footer END -->
+		
 	</div>
 </main>
