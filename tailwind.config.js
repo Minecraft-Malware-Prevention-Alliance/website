@@ -5,7 +5,8 @@ export default {
 		extend: {
 			colors: {
 				primary: '#181a1b',
-				blurple: '#5865F2'
+				blurple: '#5865F2',
+				mastodon: '#3088D4'
 			}
 		}
 	},
