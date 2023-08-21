@@ -53,6 +53,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.0.1
     version: 3.0.1(postcss@8.4.24)(svelte@3.54.0)
+  sweetalert2:
+    specifier: ^11.7.27
+    version: 11.7.27
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -2027,6 +2030,10 @@ packages:
   /svelte@3.54.0:
     resolution: {integrity: sha512-tdrgeJU0hob0ZWAMoKXkhcxXA7dpTg6lZGxUeko5YqvPdJBiyRspGsCwV27kIrbrqPP2WUoSV9ca0gnLlw8YzQ==}
     engines: {node: '>= 8'}
+    dev: true
+
+  /sweetalert2@11.7.27:
+    resolution: {integrity: sha512-QbRXGQn1sb7HEhzA/K2xtWIwQHh/qkSbb1w6jYcTql2xy17876lTREEt1D4X6Q0x2wHtfUjKJ+Cb8IVkRoq7DQ==}
     dev: true
 
   /tailwindcss@3.3.2:
