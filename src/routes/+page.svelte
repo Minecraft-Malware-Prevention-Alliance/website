@@ -5,9 +5,18 @@
 	<title>MMPA</title>
 </svelte:head>
 
-<main class="flex flex-row text-white">
+<main class="flex flex-row text-white bg-primary">
+	<!-- Header START -->
+	<!-- <div class="fixed top-0 left-0 select-none">
+		<div class="flex flex-row m-3 rounded-full">
+			<img src="/fmt-logo-chroma+glow.svg" class="rounded-full" alt="MMPA Logo" height="40" width="40" />
+			<span class="m-2 font-medium text-1xl">MMPA</span>
+		</div>
+	</div> -->
+	<!-- Header END -->
+
+	<!-- Middle START -->
 	<div class="fixed inset-0 flex flex-col items-center justify-center w-screen h-screen">
-		<!-- Middle START -->
 		<div class="flex flex-col items-center justify-center px-4 mb-10 gap-y-5 rounded-2xl">
 			<img
 				src="/fmt-logo-chroma+glow.svg"
