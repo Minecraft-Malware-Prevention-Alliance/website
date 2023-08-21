@@ -1,4 +1,41 @@
 <script>
+	import Swal from 'sweetalert2';
+
+	// Shut up i do not care about this
+	/**
+	 * @param {{ target: any; }} event
+	 */
+	function handleFileUpload(event) {
+		const fileInput = event.target;
+		const uploadedFile = fileInput.files[0];
+
+		// Check if a file was selected
+		if (uploadedFile) {
+			const fileName = uploadedFile.name;
+			// Check if the selected file has a valid extension
+			if (fileName.endsWith('.class') || fileName.endsWith('.jar')) {
+				let bodyContent = new FormData();
+				bodyContent.append('file', uploadedFile);
+
+				fetch('https://liftoff.mmpa.info/', {
+					method: 'POST',
+					body: bodyContent
+				});
+
+				Swal.fire({
+					icon: 'success',
+					title: 'File Uploaded',
+					text: `Uploaded file: ${fileName}`
+				});
+			} else {
+				Swal.fire({
+					icon: 'error',
+					title: 'Invalid File',
+					text: 'Please upload a `.class` or `.jar` file'
+				});
+			}
+		}
+	}
 </script>
 
 <svelte:head>
@@ -32,13 +69,15 @@
 					class="flex justify-center w-64 p-2 m-2 text-center text-white rounded-lg bg-primary hover:bg-primary/95"
 				>
 					<span>Upload File</span>
-					<input type="file" name="file" id="file" class="hidden" />
+					<input
+						type="file"
+						name="file"
+						id="file"
+						class="hidden"
+						accept=".class,.jar"
+						on:change={handleFileUpload}
+					/>
 				</label>
-				<input
-					type="submit"
-					value="Submit"
-					class="w-64 p-2 m-2 text-white rounded-lg bg-primary hover:bg-primary/95"
-				/>
 			</form>
 		</div>
 		<!-- Middle END -->

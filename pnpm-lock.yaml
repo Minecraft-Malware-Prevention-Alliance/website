@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  sweetalert2:
+    specifier: ^11.7.27
+    version: 11.7.27
+
 devDependencies:
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
@@ -2028,6 +2033,10 @@ packages:
     resolution: {integrity: sha512-tdrgeJU0hob0ZWAMoKXkhcxXA7dpTg6lZGxUeko5YqvPdJBiyRspGsCwV27kIrbrqPP2WUoSV9ca0gnLlw8YzQ==}
     engines: {node: '>= 8'}
     dev: true
+
+  /sweetalert2@11.7.27:
+    resolution: {integrity: sha512-QbRXGQn1sb7HEhzA/K2xtWIwQHh/qkSbb1w6jYcTql2xy17876lTREEt1D4X6Q0x2wHtfUjKJ+Cb8IVkRoq7DQ==}
+    dev: false
 
   /tailwindcss@3.3.2:
     resolution: {integrity: sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==}
